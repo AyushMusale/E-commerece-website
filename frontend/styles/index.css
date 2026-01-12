@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    margin: 0%;
+    margin: 0%; 
     background-color: black;
 }
 
@@ -69,4 +69,46 @@ body{
     font-size: 1rem;
     text-decoration: none;
     flex-shrink: 0;
+}
+
+.carousel{
+    height: 300px;
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-items{
+    height: 250px;
+    width: 95rem;
+    margin: 0 18px;
+    background-color: rgb(128, 128, 147);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.arrow-button{
+    min-width: 25px;
+    min-height: 25px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 0.85rem;
+    background: rgba(255, 255, 255, 0.9);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 50%;
+    padding: 10px 14px;
+}
+
+#left-arrow{
+    left: 1px;
+}
+#right-arrow{
+    right: 1px;
 }
